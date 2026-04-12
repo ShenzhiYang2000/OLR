@@ -130,11 +130,11 @@ If you find our code useful, please kindly cite our paper:
 
 ---
 
-# Acknowledgement
+### Acknowledgement
 
 OLR builds upon [LUFFY](https://github.com/ElliottYan/LUFFY), [veRL](https://github.com/volcengine/verl) and [deepscaler](https://github.com/agentica-project/rllm), and utilizes [vLLM](https://github.com/vllm-project/vllm) for inference. We utilize [Math-Verify](https://github.com/huggingface/Math-Verify) for math reasoning evaluation. We thank the open-source community for datasets and backbones.
 
-# 📬 Contact
+### 📬 Contact
 
 For questions, feedback, or collaboration opportunities, feel free to reach out:
 - Shenzhi Yang: yangshenzhi@zju.edu.cn
