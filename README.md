@@ -97,7 +97,7 @@ This repository contains all the `data/` needed for training and testing. The mo
 
 ```bash
 # OLR (use_olr=True)
-bash exp_script/run_qwen3-4B-base_noise_label_weak_use_trapo.sh
+bash exp_script/run_qwen3-4B-base_noise_label_weak_use_olr.sh
 
 # Baselines (use_olr=False; switch baseline as needed)
 bash exp_script/run_qwen3-4B-base_noise_label_unsupervised_baselines.sh
