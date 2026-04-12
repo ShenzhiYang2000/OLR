@@ -30,8 +30,8 @@ for noise_ratio in "${params3[@]}"; do
 
         python3 -m verl.trainer.main_olr \
             algorithm.adv_estimator=grpo \
-            data.train_files=/ossfs/workspace/aml0/484999/code/verl-main/data/noise_data/DAPO_14k_16384_sampled_800_passrate_0.5_noise_label_${noise_ratio}.parquet \
-            data.val_files=/ossfs/workspace/aml0/484999/code/verl-main/data/valid_in_training.parquet \
+            data.train_files=/your_path/OLR-main/data/noise_data/DAPO_14k_16384_sampled_800_passrate_0.5_noise_label_${noise_ratio}.parquet \
+            data.val_files=/your_path/OLR-main/data/valid_in_training.parquet \
             data.train_batch_size=160 \
             data.max_prompt_length=2048 \
             data.max_response_length=$max_response_length \
@@ -73,7 +73,7 @@ for noise_ratio in "${params3[@]}"; do
             +trainer.use_olr=$use_olr \
             +trainer.baseline=$baseline \
             trainer.train_mode='weak' \
-            trainer.output_log_path=/ossfs/workspace/aitech_aidata/chuwei/log/DAPO_800_label_flip_${p_1_to_0}_${p_0_to_1}_Qwen3_4B_base_weak_noise_${noise_ratio}_olr_${use_olr}_slope_tres_${slope_tres}_start_${start}_total_epochs_${total_epochs}_${max_response_length}_${baseline}.log \
+            trainer.output_log_path=/your_path/log/DAPO_800_label_flip_${p_1_to_0}_${p_0_to_1}_Qwen3_4B_base_weak_noise_${noise_ratio}_olr_${use_olr}_slope_tres_${slope_tres}_start_${start}_total_epochs_${total_epochs}_${max_response_length}_${baseline}.log \
             trainer.default_local_dir=$CKPT_DIR \
             trainer.max_actor_ckpt_to_keep=2 \
             trainer.n_gpus_per_node=8 \
