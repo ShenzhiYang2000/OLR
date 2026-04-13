@@ -116,7 +116,7 @@ See `eval_scripts/eval_best.sh` for a batch example; set `ROOT`, `MODEL_PATH`, e
 
 ### Citation
 
-If you find our code useful, please give us a star ⭐ or cite us using::
+If you find our code useful, please give us a star ⭐ or cite us using:
 
 ```bibtex
 @article{yang2026can,
